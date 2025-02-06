@@ -1,0 +1,13 @@
+{
+    "libs": [],
+    "main": "main.tev",
+    "folders": {
+        "commands": "./tests/commands"
+    },
+    "files": {
+        "variables": "./tests/config/variables.json",
+        "status": "./tests/config/variables.json",
+        "commands": "./tests/config/variables.json"
+    },
+    "token": ""
+}

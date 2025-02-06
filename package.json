@@ -1,0 +1,60 @@
+{
+    "name": "ctfdbd.tev",
+    "version": "1.0.0",
+    "description": "CTFDB - Coding tool for discord bot development.",
+    "main": "dist/main.js",
+    "type": "commonjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node dist/main.js",
+        "build": "tsc -w",
+        "launch": "yarn install && yarn build && yarn start",
+        "prettier": "prettier -w src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TheTesterss/ctfdbd.tev.git"
+    },
+    "keywords": [
+        "discord",
+        "tev",
+        "coding",
+        "tool",
+        "language",
+        "discord.js"
+    ],
+    "author": "TheTesterss | Morgan Jaouen",
+    "contributors": [
+        {
+            "name": "Morgan Jaouen",
+            "email": "morganjaouen65636@gmail.com",
+            "url": "https://github.com/TheTesterss"
+        }
+    ],
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "exports": {
+        ".": {
+            "require": "./dist/main.js",
+            "import": "./dist/main.js"
+        }
+    },
+    "types": "dist/main.d.js",
+    "license": "MIT",
+    "bugs": {
+        "email": "morganjaouen65636@gmail.com",
+        "url": "https://github.com/TheTesterss/ctfdbd.tev/issues"
+    },
+    "homepage": "https://github.com/TheTesterss/ctfdbd.tev#README.md",
+    "devDependencies": {
+        "@types/node": "^22.13.1",
+        "prettier": "^3.4.2",
+        "tsc": "^2.0.4",
+        "tslib": "^2.8.1",
+        "typescript": "^5.7.3"
+    },
+    "bin": {
+        "tev": "./dist/main.js"
+    }
+}

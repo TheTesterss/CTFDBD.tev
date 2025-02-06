@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "checkJs": false,
+        "declaration": true,
+        "declarationMap": false,
+        "esModuleInterop": true,
+        "lib": ["EsNext", "DOM", "DOM.Iterable"],
+        "strict": true,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "target": "ESNext",
+        "rootDir": "src",
+        "outDir": "./dist/",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "importHelpers": true
+    },
+    "exclude": [
+        "node_modules",
+        "tests",
+        "dist",
+        "v1",
+        "tests"
+    ],
+    "include": [
+        "src/**/*.ts"
+    ]
+}
