@@ -9,6 +9,8 @@ import { blue, green, yellow } from "../colors";
  * 
  * @param self The main file.
  * @param args A list of every command arguments/options.
+ * @returns Nothing.
+ * @description Shows message about how to use commands or a specific one.
  */
 export default (self: Self, args: string[]): void => {
     const command = commands.find((cmd: Command) => cmd.name === "help");

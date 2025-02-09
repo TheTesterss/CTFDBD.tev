@@ -9,7 +9,9 @@
             "tev help",
             "tev help name=command_name"
         ],
-        "options": []
+        "options": [
+            { "name": "--help", "description": "Shows informations about this command."}
+        ]
     },
     {
         "name": "version",
@@ -18,6 +20,19 @@
         "usages": [
             "tev version",
             "tev version [option]"
+        ],
+        "options": [
+            { "name": "--help", "description": "Shows informations about this command."},
+            { "name": "--usage", "description": "Shows usages of this command." }
+        ]
+    },
+    {
+        "name": "run",
+        "description": "Launches the client and wait for commands or events to be executed.",
+        "availableArgs": [],
+        "usages": [
+            "tev run",
+            "tev run [option]"
         ],
         "options": [
             { "name": "--help", "description": "Shows informations about this command."},

@@ -2,6 +2,7 @@
 import { Config } from "./types/config";
 import fs from "node:fs";
 import CommandManager from "./modules/commands";
+import CommandLoader from "./core/CommandLoader";
 
 /**
  * 
@@ -16,6 +17,7 @@ export default class Self {
         token: ""
     }
     public configurationPath: string = ".tev.json";
+    public loader: CommandLoader = new CommandLoader(this);
 
     constructor() {
         this.configuration = this.readConfiguration();
@@ -36,6 +38,16 @@ export default class Self {
     public async save(): Promise<Config> {
         fs.writeFileSync(this.configurationPath, JSON.stringify(this.configuration, null, 2), { encoding: "utf-8" });
         return this.readConfiguration();
+    }
+
+    /**
+     * 
+     * @returns Nothing.
+     * @description Executes every files the getFiles() function has found.
+     */
+    public async run(): Promise<void> {
+        const files = await this.loader.getFiles();
+        files.forEach(async (file: string) => await this.loader.loadFile(file));
     }
 }
 
