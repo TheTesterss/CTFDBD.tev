@@ -16,5 +16,5 @@ export interface Arg {
     description?: string; // ? What does the argument do?
     waitingForResponse?: boolean; // ? Is the argument waiting for a response?
     // TRUE  -> tev account username=string password=string
-    // FALSE -> tev init .tev.json  
+    // FALSE -> tev init .tev.json
 }

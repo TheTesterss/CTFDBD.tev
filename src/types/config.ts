@@ -4,7 +4,7 @@ export interface Config {
     name?: string; // ? Used when importations will be available.
     description?: string; // ? To describe the library.
     version?: string; // ? Following pattern "V^0.0.0", library version.
-    libs?: Library[], // ? All the downloaded libraries.
+    libs?: Library[]; // ? All the downloaded libraries.
     folders: FoldersEnumeration; // ? The necessary folders.
     files: FilesEnumeration; // ? The necessary files.
     token: string; // ? The bot token.

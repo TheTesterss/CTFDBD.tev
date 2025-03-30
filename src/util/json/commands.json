@@ -3,26 +3,22 @@
         "name": "help",
         "description": "Shows informations about every commands and their options.",
         "availableArgs": [
-            { "name": "name", "description": "Shows informations about a specific command.", "waitingForResponse": true }
+            {
+                "name": "name",
+                "description": "Shows informations about a specific command.",
+                "waitingForResponse": true
+            }
         ],
-        "usages": [
-            "tev help",
-            "tev help name=command_name"
-        ],
-        "options": [
-            { "name": "--help", "description": "Shows informations about this command."}
-        ]
+        "usages": ["tev help", "tev help name=command_name"],
+        "options": [{ "name": "--help", "description": "Shows informations about this command." }]
     },
     {
         "name": "version",
         "description": "Shows the version of tev used in a project.",
         "availableArgs": [],
-        "usages": [
-            "tev version",
-            "tev version [option]"
-        ],
+        "usages": ["tev version", "tev version [option]"],
         "options": [
-            { "name": "--help", "description": "Shows informations about this command."},
+            { "name": "--help", "description": "Shows informations about this command." },
             { "name": "--usage", "description": "Shows usages of this command." }
         ]
     },
@@ -30,12 +26,9 @@
         "name": "run",
         "description": "Launches the client and wait for commands or events to be executed.",
         "availableArgs": [],
-        "usages": [
-            "tev run",
-            "tev run [option]"
-        ],
+        "usages": ["tev run", "tev run [option]"],
         "options": [
-            { "name": "--help", "description": "Shows informations about this command."},
+            { "name": "--help", "description": "Shows informations about this command." },
             { "name": "--usage", "description": "Shows usages of this command." }
         ]
     }

@@ -2,7 +2,7 @@
     "libs": [],
     "main": "main.tev",
     "folders": {
-        "commands": "./tests/commands"
+        "commands": "./tests/commands/"
     },
     "files": {
         "variables": "./tests/config/variables.json",

@@ -5,7 +5,7 @@ import CommandManager from "./modules/commands";
 import CommandLoader from "./core/CommandLoader";
 
 /**
- * 
+ *
  * @description This class is about every configuration features except libraries ones.
  */
 export default class Self {
@@ -15,7 +15,7 @@ export default class Self {
             commands: "./commands/"
         },
         token: ""
-    }
+    };
     public configurationPath: string = ".tev.json";
     public loader: CommandLoader = new CommandLoader(this);
 
@@ -24,7 +24,7 @@ export default class Self {
     }
 
     /**
-     * 
+     *
      * @returns The configuration.
      */
     public readConfiguration(): Config {
@@ -32,7 +32,7 @@ export default class Self {
     }
 
     /**
-     * 
+     *
      * @returns A promise with the configuration after being updated.
      */
     public async save(): Promise<Config> {
@@ -41,7 +41,7 @@ export default class Self {
     }
 
     /**
-     * 
+     *
      * @returns Nothing.
      * @description Executes every files the getFiles() function has found.
      */
