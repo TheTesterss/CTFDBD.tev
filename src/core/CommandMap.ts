@@ -19,7 +19,7 @@ export default class CommandMap {
             description: "Returns the current ping",
             args: [],
             lib: null,
-            run: () => 0
+            run: () => {return 0}
         }
 
         // ? Default attributes
